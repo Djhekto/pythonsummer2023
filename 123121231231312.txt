@@ -1,0 +1,435 @@
+PS D:\ttemp1\python23\pythonsummer2023> $ git config --global us
+$ : Имя "$" не распознано как имя командлета, функции, файла сце
+вторите попытку.
+строка:1 знак:1
++ $ git config --global user.name "John Doe"
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\ttemp1\python23\pythonsummer2023> $ git config --global us
+$ : Имя "$" не распознано как имя командлета, функции, файла сце
+вторите попытку.
+строка:1 знак:1
++ $ git config --global user.name "John Doe"
++ ~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\ttemp1\python23\pythonsummer2023> git config --global user
+PS D:\ttemp1\python23\pythonsummer2023> $ git config --global us
+$ : Имя "$" не распознано как имя командлета, функции, файла сце
+вторите попытку.
+строка:1 знак:1
++ $ git config --global user.email johndoe@example.com
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], Com
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\ttemp1\python23\pythonsummer2023> git config --global user
+PS D:\ttemp1\python23\pythonsummer2023> 
+ *  History restored 
+
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+Using default tag: latest
+[2023-07-22T19:18:15.670869800Z][docker-credential-desktop.syste
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+[2023-07-22T19:18:32.529738400Z][docker-credential-desktop.syste
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+[2023-07-22T19:22:15.722218500Z][docker-credential-desktop.syste
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+Using default tag: latest
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.0)
+  checkpoint  Manage checkpoints
+  compose*    Docker Compose (Docker Inc., v2.19.1)
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.1.0)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.20)
+  image       Manage images
+  init*       Creates Docker-related starter files for your proj
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials
+  scan*       Docker Scan (Docker Inc., v0.26.0)
+  scout*      Command line tool for Docker Scout (Docker Inc., 0
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  config      Manage Swarm configs
+  node        Manage Swarm nodes
+  secret      Manage Swarm secrets
+  service     Manage Swarm services
+  stack       Manage Swarm stacks
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error str
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the loc
+  create      Create a new container
+  diff        Inspect changes to files or directories on a conta
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a fil
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the c
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usa
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IM
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more container
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then prin
+
+Global Options:
+      --config string      Location of client config files (defa
+                           "C:\\Users\\Professional\\.docker")
+  -c, --context string     Name of the context to use to connect
+                           daemon (overrides DOCKER_HOST env var
+                           default context set with "docker cont
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info
+                           "warn", "error", "fatal") (default "i
+      --tls                Use TLS; implied by --tlsverify
+                           "C:\\Users\\Professional\\.docker\\ca
+      --tlscert string     Path to TLS certificate file (default
+                           "C:\\Users\\Professional\\.docker\\ce
+      --tlskey string      Path to TLS key file (default
+                           "C:\\Users\\Professional\\.docker\\ke
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> ^C
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker help
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.0)
+  checkpoint  Manage checkpoints
+  compose*    Docker Compose (Docker Inc., v2.19.1)
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.1.0)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.20)
+  image       Manage images
+  init*       Creates Docker-related starter files for your proj
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials
+  scan*       Docker Scan (Docker Inc., v0.26.0)
+  scout*      Command line tool for Docker Scout (Docker Inc., 0
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  config      Manage Swarm configs
+  node        Manage Swarm nodes
+  secret      Manage Swarm secrets
+  service     Manage Swarm services
+  stack       Manage Swarm stacks
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error str
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the loc
+  create      Create a new container
+  diff        Inspect changes to files or directories on a conta
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a fil
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the c
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usa
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IM
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more container
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then prin
+
+Global Options:
+      --config string      Location of client config files (defa
+                           "C:\\Users\\Professional\\.docker")
+  -c, --context string     Name of the context to use to connect
+                           daemon (overrides DOCKER_HOST env var
+                           default context set with "docker cont
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info
+                           "warn", "error", "fatal") (default "i
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (d
+                           "C:\\Users\\Professional\\.docker\\ca
+      --tlscert string     Path to TLS certificate file (default
+                           "C:\\Users\\Professional\\.docker\\ce
+      --tlskey string      Path to TLS key file (default
+                           "C:\\Users\\Professional\\.docker\\ke
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker login
+Login with your Docker ID to push and pull images from Docker Hu
+Username: 
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker      
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container    
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.0)
+  compose*    Docker Compose (Docker Inc., v2.19.1)
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.1.0)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.20)
+  image       Manage images
+  init*       Creates Docker-related starter files for your proj
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials
+  scan*       Docker Scan (Docker Inc., v0.26.0)
+  scout*      Command line tool for Docker Scout (Docker Inc., 0
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error str
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the loc
+  create      Create a new container
+  diff        Inspect changes to files or directories on a conta
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a fil
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the c
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usa
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IM
+  unpause     Unpause all processes within one or more container
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then prin
+
+Global Options:
+      --config string      Location of client config files (defa
+                           "C:\\Users\\Professional\\.docker")
+  -c, --context string     Name of the context to use to connect
+                           daemon (overrides DOCKER_HOST env var
+                           default context set with "docker cont
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info
+                           "warn", "error", "fatal") (default "i
+      --tls                Use TLS; implied by --tlsverify
+                           "C:\\Users\\Professional\\.docker\\ca
+      --tlscert string     Path to TLS certificate file (default
+      --tlskey string      Path to TLS key file (default
+                           "C:\\Users\\Professional\\.docker\\ke
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker pull 
+alpine: Pulling from library/postgres
+31e352740f53: Pull complete
+36cb57831f52: Pull complete
+a120e2610875: Pull complete
+64f9e9ad23bd: Pull complete
+dd2a4281faaa: Pull complete
+daef310ca2c6: Pull complete
+Digest: sha256:48d8422c6ae570a5bda52f07548b8e65dd055ac0b661f25b4
+Status: Downloaded newer image for postgres:alpine
+docker.io/library/postgres:alpine
+ID, head over to https://hub.docker.com to create one.
+Password:
+WARNING! Your password will be stored unencrypted in C:\Users\Pr.
+Configure a credential helper to remove this warning. See
+
+Login Succeeded
+
+Logging in with your password grants your terminal complete acce
+For better security, log in with a limited-privilege personal acs://docs.docker.com/go/access-tokens/
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker scout
+INFO New version 0.20.0 available (installed version is 0.16.1)
+    v SBOM of image already cached, 64 packages indexed
+level=error msg="Status: could not list CVEs for the image: fail
+Forbidden; body: \"\\n<html><head>\\n<meta http-equiv=\\\"contenml;charset=utf-8\\\">\\n<title>403 Forbidden</title>\\n</head>\\fffff>\\n<h1>Error: Forbidden</h1>\\n<h2>Your client does not ha>/v1/graphql</code> from this server.</h2>\\n<h2></h2>\\n</body>ode: 1"
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker image
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+postgres     latest    f0ff6ef79497   2 weeks ago   412MB
+postgres     alpine    696ffaadb338   5 weeks ago   237MB
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker run -GRES_PASSWORD=pass -d -p 5432:5432 postgres:alpine
+fc4ea00e038fbcb03c6b04fdd066a805272915b141b0b26825c8551bd2b30aeb
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATETS                    NAMES
+ 18 seconds   0.0.0.0:5432->5432/tcp   fastapi-postgres
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker exec ostgres bash
+fc4ea00e038f:/# psql -U postgres
+ERROR:  syntax error at or near "create"        
+ERROR:  syntax error at or near "create"
+LINE 2: create user myuser with encrypted password 'pass';
+        ^
+postgres=# create user myuser with encrypted password 'pass';
+CREATE ROLE
+postgres=# create database fastapi_db
+postgres-# create database fastapi_db;
+ERROR:  syntax error at or near "create"
+LINE 2: create database fastapi_db;
+        ^
+postgres=# create database fastapi_db;
+CREATE DATABASE
+postgres=# create user myuser with encrypted password 'pass';
+ERROR:  role "myuser" already exists
+postgres=# grant all privileges on database fastapi_db to myuser;
+GRANT
+postgres=# \c fastapi_db
+You are now connected to database "fastapi_db" as user "postgres".
+fastapi_db=# psql -h localhost -p 5432 postgres
+fastapi_db-# 
+fastapi_db-# \c fastapi_db
+You are now connected to database "fastapi_db" as user "postgres".
+fastapi_db-# psql -h localhost -p 5432 postgres
+fastapi_db-# \c fastapi_db
+You are now connected to database "fastapi_db" as user "postgres".
+fastapi_db-# grant all privileges on database fastapi_db to myuser;
+ERROR:  syntax error at or near "psql"
+LINE 1: psql -h localhost -p 5432 postgres
+fastapi_db=# grant all privileges on database fastapi_db to myuser;
+GRANT
+fastapi_db=# create database fastapi_db;
+ERROR:  database "fastapi_db" already exists
+fastapi_db=# create user myuser with encrypted password 'pass';
+ERROR:  role "myuser" already exists
+GRANT
+fastapi_db=# psql -h localhost -p 5432 postgres
+fastapi_db-# \c fastapi_db
+You are now connected to database "fastapi_db" as user "postgres".
+fastapi_db-# EXIT()
+fastapi_db-#
+fastapi_db=#
+fastapi_db=#
+fastapi_db=#
+fastapi_db=#
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATED        STATUS   
+     PORTS                    NAMES
+fc4ea00e038f   postgres:alpine   "docker-entrypoint.s…"   13 hours ago   Up 13 hours   0.0.0.0:5432->5432/tcp   fastapi-postgres
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker run --name fastapi-postgres -e POSTGRES_PASSWORD=pass -d -p 5432:5432 postgres:alpine
+docker: Error response from daemon: Conflict. The container name "/fastapi-postgres" is already in use by container "fc4ea00e038fbcb03c6b04fdd066a805272915b141b0b26825c8551bd2b30aeb". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+PS D:\ttemp1\python23\pythonsummer2023\2sqlalchemy> docker exec -it fastapi-postgres bash
+fc4ea00e038f:/# psql -U postgres
+psql (15.3)
+Type "help" for help.
+
+postgres=#
