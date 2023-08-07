@@ -89,3 +89,10 @@ url. <- src/templates -> settings
     _dict_
     return render(request, "__", _dict_)
 =>  {{ _key_ }}
+
+...
+#https://docs.djangoproject.com/en/4.2/ref/templates/builtins/
+
+
+
+ 
