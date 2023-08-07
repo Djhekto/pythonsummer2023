@@ -51,6 +51,15 @@ n models => migrate cmd
 new dd => new superuser
 
 
+new mosel w\o del db
+ "
+ | null = T -> old obj migrate norm
+ | default=.. -> old obj fill
+ | other
+  one off default
+ "
+blank can be non required 
+none is for db
 
 
 
