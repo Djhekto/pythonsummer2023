@@ -61,6 +61,17 @@ new mosel w\o del db
 blank can be non required 
 none is for db
 
+...
+custom home page
+   # осталось
+   #django-admin startproject one
+   #...
+python manage.py startapp __
+__ => installed apps
 
+views ~~ webpages
+class/fun  -//- qt
 
+new view => urls.  => all ok
 
+...
