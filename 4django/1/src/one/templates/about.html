@@ -14,7 +14,9 @@
 
 <ul>
 {% for itemm in listt %}
-    <li> {{ forloop.counter }} - {{ itemm }} </li>
+    {% if itemm >= 0 %}
+    <li> {{ forloop.counter }} - {{ itemm|add:10 }} </li>
+    {% endif %}
 {% endfor %}
 </ul>
 
