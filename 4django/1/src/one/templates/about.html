@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ request.user }} я в твоих стенах</p>
+
+
+    <p>{{ idk }},{{ textt }} f[f[f[[f </p>
+
+<ul>
+    <li> Item1 </li>
+    <li> Item2 </li>
+</ul>
+
+<ul>
+{% for itemm in listt %}
+    <li> {{ forloop.counter }} - {{ itemm }} </li>
+{% endfor %}
+</ul>
+
+{% endblock  %}

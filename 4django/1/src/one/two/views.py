@@ -10,6 +10,14 @@ def home(request, *args, **kwargs):
 
     return render(request, "home.html", {})
 
+def aboutsmt(request, *args, **kwargs):
+    smth_info = {"textt": "This is about us",
+                 "idk": 012921.19281,
+                 "listt": [1,2,3]
+                 }
+    return render(request, "about.html", smth_info)
+
+
 
 
 

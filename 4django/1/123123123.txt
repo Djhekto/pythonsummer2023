@@ -82,4 +82,10 @@ url. <- src/templates -> settings
 
 {% block __ %} default {% endblock  %}
 {% extendes "__" %}
+{% include "__"  %}
 
+...
+
+    _dict_
+    return render(request, "__", _dict_)
+=>  {{ _key_ }}
