@@ -75,3 +75,11 @@ class/fun  -//- qt
 new view => urls.  => all ok
 
 ...
+render template
+
+url. <- src/templates -> settings
+"DIRS": [os.path.join(BASE_DIR,"templates")],
+
+{% block __ %} default {% endblock  %}
+{% extendes "__" %}
+
