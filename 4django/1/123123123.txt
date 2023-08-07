@@ -39,9 +39,16 @@ Product.objects.all()
 Product.objects.create(title="234",description="234",price="2343",extra="smt" )
 
  "
- 
 
-
+del migrations \init
+    pycache
+    db
+=> new models
+https://docs.djangoproject.com/en/4.2/ref/models/fields/
+(cntrl f -> types)
+https://docs.djangoproject.com/en/4.2/ref/models/fields/#model-field-types
+n models => migrate cmd
+new dd => new superuser
 
 
 
