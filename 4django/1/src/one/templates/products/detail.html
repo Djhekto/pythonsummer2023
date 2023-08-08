@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ request.user }} я в твой продукт</p>
+
+
+    <p>{{ pr_title }}   ,  {{ pr_descr }}  ,  {{ pr_price }}  ,  {{ pr_extra }}  ,  {{ pr_smthn }}  ,  {{pr_ahah}}</p>
+
+
+    <p>{% if pr_smthn %} эта штука тру жесть {%else %} эта штука фалс отстой {%endif%} </p>
+
+{% endblock  %}
