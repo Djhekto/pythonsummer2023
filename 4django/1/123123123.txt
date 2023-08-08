@@ -104,7 +104,7 @@ from products.models import Product
 
 ... view access db
 views in db related app #startapp
-new class in models
+new class/fun in views
 new html file
 new urls path
 

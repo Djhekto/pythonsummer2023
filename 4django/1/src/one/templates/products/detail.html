@@ -5,9 +5,9 @@
     <p>{{ request.user }} я в твой продукт</p>
 
 
-    <p>{{ pr_title }}   ,  {{ pr_descr }}  ,  {{ pr_price }}  ,  {{ pr_extra }}  ,  {{ pr_smthn }}  ,  {{pr_ahah}}</p>
+    <p>{{ pr_obj.title }}   ,  {{ pr_obj.description }}  ,  {{ pr_obj.price }}  ,  {{ pr_obj.extra }}  ,  {{ pr_obj.smthnew }}  ,  {{pr_obj.ahah}}</p>
 
 
-    <p>{% if pr_smthn %} эта штука тру жесть {%else %} эта штука фалс отстой {%endif%} </p>
+    <p>{% if pr_obj.smthnew %} эта штука тру жесть {%else %} эта штука фалс отстой {%endif%} </p>
 
 {% endblock  %}
