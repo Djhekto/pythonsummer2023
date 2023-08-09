@@ -1,14 +1,33 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+#from django.http import HttpResponse
 from .models import Product
+from .forms import ProductForm
 
-# Create your views here.
+def product_create_view(request,*args, **kwargs):
+    form1 = ProductForm(request.POST or None)
+    if form1.is_valid():
+        form1.save()
+        form1 = ProductForm() #rerender to clear fields in views
+    
+    context = { "pr_form": form1}
+
+    return render(request,"products/create_product.html", context)
+
 def product_detail_view(request,*args, **kwargs):
     obj1 = Product.objects.get(id=1)
     context = { "pr_obj": obj1}
 
     return render(request,"products/detail.html", context)
-    return render(request,"detail.html", {})
+    #return render(request,"detail.html", {})
+
+
+
+
+
+
+
+
+
 
 
 

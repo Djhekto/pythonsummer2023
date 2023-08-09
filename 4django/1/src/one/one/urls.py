@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path
 
 from two.views import home,aboutsmt
-from products.views import product_detail_view
+from products.views import product_detail_view, product_create_view
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -26,5 +27,5 @@ urlpatterns = [
     path('smt/', home, name='home'),
     path('about/', aboutsmt, name='about'),
     path('product/', product_detail_view, name='product'),
-
+    path('create_product/', product_create_view, name='nproduct'),
 ]

@@ -105,8 +105,29 @@ from products.models import Product
 ... view access db
 views in db related app #startapp
 new class/fun in views
-new html file
+new html file (local)
 new urls path
+
+... model forms
+
+form class w/ meta  #idk wtf
+     // fields обязательный
+
+handle in view add to templates
+extend urls
+
+{{_form_.as_p}}    #{{pr_form.as_p}}   form->html  +поля во вью
+        //неправильное имя приводит к исчезновению поелй
+
+    // когда чет пишет про эндблок гдет опечатка
+
+IntegrityError NOT NULL constraint failed
+  в классе(модели) по которому форма есть не нуллабле поле (ЖеСт1)
+    добавление дефаулта в модель фикс -> мигрейт 
+
+
+
+
 
 
 

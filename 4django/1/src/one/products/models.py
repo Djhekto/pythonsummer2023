@@ -5,7 +5,7 @@ class Product(models.Model):
     description = models.TextField(blank=True,null=True)
     price       = models.DecimalField(decimal_places=2,max_digits=10)
     extra       = models.TextField(default="spam")
-    smthnew     = models.BooleanField()
+    smthnew     = models.BooleanField(default=True)
     ahah        = models.TextField(blank=True, null=False)
     
     
