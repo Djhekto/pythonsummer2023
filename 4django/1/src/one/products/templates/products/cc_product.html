@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action='.' method='POST'> {% csrf_token %}
+
+<input type="text" name="q" placeholder="N search">
+
+<input type="submit" value="Save" />
+</form>
+
+{% endblock  %} 

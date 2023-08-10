@@ -13,6 +13,18 @@ def product_create_view(request,*args, **kwargs):
 
     return render(request,"products/create_product.html", context)
 
+def product_c_view(request,*args, **kwargs):
+    context = { }
+    return render(request,"products/c_product.html", context)
+
+def product_cc_view(request,*args, **kwargs):
+    if request.method == "POST":
+        print(request.POST)
+        new_title_cc = request.POST.get("q")
+        #Product.objects.create(title=new_title_cc) #<-- create model from POST
+    context = { }
+    return render(request,"products/cc_product.html", context)
+
 def product_detail_view(request,*args, **kwargs):
     obj1 = Product.objects.get(id=1)
     context = { "pr_obj": obj1}

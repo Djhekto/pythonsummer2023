@@ -125,6 +125,21 @@ IntegrityError NOT NULL constraint failed
   в классе(модели) по которому форма есть не нуллабле поле (ЖеСт1)
     добавление дефаулта в модель фикс -> мигрейт 
 
+... html no django   -//-Thunder client
+CSRF verification failed. Request aborted.  403 <- seq mess
+ | POST -> GET  # post save/create  get read/goto  put update/append  delete -//-
+   get default -> post doesnt move you around
+ | action="/search"  #Page not found (404)
+ | action ="норм ссылка" GET  ##############################<-норм, если сайт готов принять метод гет
+     //небезопасно
+ | <form action='.' method='POST'> {% csrf_token %} норм тема
+...
+
+
+
+
+
+
 
 
 
