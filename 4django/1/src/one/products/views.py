@@ -1,16 +1,23 @@
 from django.shortcuts import render
 #from django.http import HttpResponse
 from .models import Product
-from .forms import ProductForm
+from .forms import ProductForm,RawProductForm
+
 
 def product_create_view(request,*args, **kwargs):
-    form1 = ProductForm(request.POST or None)
-    if form1.is_valid():
-        form1.save()
-        form1 = ProductForm() #rerender to clear fields in views
-    
-    context = { "pr_form": form1}
+    form1 = RawProductForm()#GET|NON-POST -> EAT AND IGNORE
 
+    if request.method == "POST":
+        form1 = RawProductForm(request.POST)
+        if form1.is_valid():#dj builtin seq
+            print(form1.cleaned_data)
+            Product.objects.create(**form1.cleaned_data)#kostili so ** lol
+        else:
+            print("err in one/views",form1.errors)
+            
+    
+    context = { "form": form1,}
+    
     return render(request,"products/create_product.html", context)
 
 def product_c_view(request,*args, **kwargs):
@@ -33,7 +40,18 @@ def product_detail_view(request,*args, **kwargs):
     #return render(request,"detail.html", {})
 
 
+"""
 
+def product_create_view(request,*args, **kwargs):
+    form1 = ProductForm(request.POST or None)
+    if form1.is_valid():
+        form1.save()
+        form1 = ProductForm() #rerender to clear fields in views
+    
+    context = { "pr_form": form1}
+
+    return render(request,"products/create_product.html", context)
+"""
 
 
 

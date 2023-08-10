@@ -133,7 +133,25 @@ CSRF verification failed. Request aborted.  403 <- seq mess
  | action ="норм ссылка" GET  ##############################<-норм, если сайт готов принять метод гет
      //небезопасно
  | <form action='.' method='POST'> {% csrf_token %} норм тема
-...
+
+... forms
+#https://docs.djangoproject.com/en/4.2/ref/forms/fields/
+
+create form w/ (forms.Form)
+    add to view/html
+    // goggle ths  {{form.as_p}} | {{form.as_li}} | ...
+-> validation req BUILTIN
+   some more seq staff in views
+
+
+
+
+
+
+
+
+
+
 
 
 
