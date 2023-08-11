@@ -143,8 +143,9 @@ create form w/ (forms.Form)
 -> validation req BUILTIN
    some more seq staff in views
 
-... form widgets  //same link
-... validation in forms
+... form widgets  //same link   найстроечки хтмл окошек лол
+... validation in forms         иф елс лол
+... init values in form         заполненые при запуске поля
 
 
 
