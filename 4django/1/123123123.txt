@@ -144,7 +144,7 @@ create form w/ (forms.Form)
    some more seq staff in views
 
 ... form widgets  //same link
-
+... validation in forms
 
 
 

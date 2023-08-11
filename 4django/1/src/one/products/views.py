@@ -3,7 +3,17 @@ from django.shortcuts import render
 from .models import Product
 from .forms import ProductForm,RawProductForm
 
-
+#nonraw
+def product_create_view(request,*args, **kwargs):
+    form1 = ProductForm(request.POST or None)#GET|NON-POST -> EAT AND IGNORE
+    if form1.is_valid():#dj builtin seq
+        form1.save()
+        form1 = ProductForm()#kostili so ** lol
+            
+    context = { "form": form1,} 
+    return render(request,"products/create_product.html", context)
+#raw
+"""
 def product_create_view(request,*args, **kwargs):
     form1 = RawProductForm()#GET|NON-POST -> EAT AND IGNORE
 
@@ -15,10 +25,9 @@ def product_create_view(request,*args, **kwargs):
         else:
             print("err in one/views",form1.errors)
             
-    
-    context = { "form": form1,}
-    
+    context = { "form": form1,} 
     return render(request,"products/create_product.html", context)
+"""
 
 def product_c_view(request,*args, **kwargs):
     context = { }
