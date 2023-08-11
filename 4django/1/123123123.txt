@@ -143,6 +143,10 @@ create form w/ (forms.Form)
 -> validation req BUILTIN
    some more seq staff in views
 
+... form widgets  //same link
+
+
+
 
 
 
