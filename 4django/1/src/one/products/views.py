@@ -1,8 +1,21 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404
 #from django.http import HttpResponse
 from .models import Product
 from .forms import ProductForm,RawProductForm
+
+def delete_by_post(request, del_id, *args, **kwargs):
+    object = Product.objects.get(id = del_id)
+#    object = get_object_or_404(Product,id = del_id)
+
+    if request.method == "POST":
+        object.delete()
+        return redirect("../../")
+    context = {
+        "object": object,
+        "object_id": del_id
+    }
+    return render(request, "products/delete.html", context)    
 
 def dynamic_smth(request, d_id, *args, **kwargs):
     #object = Product.objects.get(id = d_id)
