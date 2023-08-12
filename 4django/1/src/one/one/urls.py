@@ -27,11 +27,12 @@ urlpatterns = [
     path('smt/', home, name='home'),
     path('about/', aboutsmt, name='about'),
     path('product/', product_detail_view, name='product'),
+#    path('products/<int:id>', product_detail_view, name='product'),    
     path('create_product/', product_create_view, name='nproduct'),
     path('c_product/', product_c_view, name='ncproduct'),
     path('cc_product/', product_cc_view, name='nccproduct'),
     path('create_product_init/', render_initial_data),
-    path('dynamic/<int:d_id>/', dynamic_smth),
+    path('products/<int:d_id>/', dynamic_smth, name="products"),
     path('delete_post/<int:del_id>/', delete_by_post),
     path('list/', product_list),
     

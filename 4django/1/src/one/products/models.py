@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Product(models.Model):
     title       = models.CharField(max_length=30)
@@ -8,6 +9,9 @@ class Product(models.Model):
     smthnew     = models.BooleanField(default=True)
     ahah        = models.TextField(blank=True, null=False)
     
+    def get_absolute_url(self):
+        #return f"/products/{self.id}"
+        return reverse("products", kwargs={"id": self.id})
     
 
 
