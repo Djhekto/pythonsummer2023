@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from two.views import home,aboutsmt
-from products.views import product_detail_view, product_create_view, product_c_view,product_cc_view, render_initial_data
+from products.views import product_detail_view, product_create_view, product_c_view,product_cc_view, render_initial_data, dynamic_smth
 
 
 urlpatterns = [
@@ -31,5 +31,7 @@ urlpatterns = [
     path('c_product/', product_c_view, name='ncproduct'),
     path('cc_product/', product_cc_view, name='nccproduct'),
     path('create_product_init/', render_initial_data),
+    path('dynamic/<int:d_id>/', dynamic_smth),
+
     
 ]

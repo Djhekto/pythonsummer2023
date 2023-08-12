@@ -3,6 +3,15 @@ from django.shortcuts import render
 from .models import Product
 from .forms import ProductForm,RawProductForm
 
+def dynamic_smth(request, d_id, *args, **kwargs):
+    object = Product.objects.get(id = d_id)
+    context = {
+        "object": object,
+        "object_id": d_id
+    }
+    return render(request, "products/dynamic.html", context)
+    
+
 def render_initial_data(request,*args, **kwargs): #outside form init ->differnt views
     init_data = {
         "title" : "ma new title"
