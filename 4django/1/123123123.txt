@@ -147,6 +147,10 @@ create form w/ (forms.Form)
 ... validation in forms         иф елс лол
 ... init values in form         заполненые при запуске поля
 
+...dynamic url routing
+get _data_ as fun param in view from urls <_type_:_data_>
+
+...
 
 
 

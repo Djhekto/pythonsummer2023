@@ -1,10 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.http import Http404
 #from django.http import HttpResponse
 from .models import Product
 from .forms import ProductForm,RawProductForm
 
 def dynamic_smth(request, d_id, *args, **kwargs):
-    object = Product.objects.get(id = d_id)
+    #object = Product.objects.get(id = d_id)
+    object = get_object_or_404(Product,id = d_id)
+    #try:
+    #    object = Product.objects.get(id = d_id)
+    #except Product.DoesNotExist:
+    #    raise Http404
     context = {
         "object": object,
         "object_id": d_id
