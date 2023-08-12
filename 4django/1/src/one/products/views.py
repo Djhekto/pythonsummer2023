@@ -4,6 +4,14 @@ from django.http import Http404
 from .models import Product
 from .forms import ProductForm,RawProductForm
 
+def product_list(request):
+    queryset = Product.objects.all()    
+    context = {
+        "object_list": queryset
+    }
+    return render(request, "products/list.html", context)    
+
+
 def delete_by_post(request, del_id, *args, **kwargs):
     object = Product.objects.get(id = del_id)
 #    object = get_object_or_404(Product,id = del_id)
