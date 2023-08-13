@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>{{ request.user }} я динамическая ссылка на {{ object_id}} по айди обьект </p>
+    <p>{{ object.title }}   ,  {{ object.description }}  ,  {{ object.price }}  ,  {{ object.extra }}  ,  {{ object.smthnew }}  ,  {{object.ahah}}</p>
+
+
+{% endblock  %}

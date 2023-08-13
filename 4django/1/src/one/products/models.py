@@ -10,8 +10,8 @@ class Product(models.Model):
     ahah        = models.TextField(blank=True, null=False)
     
     def get_absolute_url(self):
-        #return f"/products/{self.id}"
-        return reverse("products", kwargs={"id": self.id})
+        return f"/products/{self.id}"
+        #return reverse("products", kwargs={"id": self.id})
     
 
 

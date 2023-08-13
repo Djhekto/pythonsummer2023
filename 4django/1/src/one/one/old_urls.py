@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from two.views import home,aboutsmt
-from products.views import product_detail_view, product_create_view,  product_list_view, product_delete_view, product_update_view
+from products.views import product_detail_view, product_create_view, product_c_view,product_cc_view, render_initial_data, dynamic_smth, delete_by_post, product_list
 
 
 urlpatterns = [
@@ -26,11 +26,14 @@ urlpatterns = [
     path('', home, name='home'),
     path('smt/', home, name='home'),
     path('about/', aboutsmt, name='about'),
+    path('product/', product_detail_view, name='product'),
+#    path('products/<int:id>', product_detail_view, name='product'),    
+    path('create_product/', product_create_view, name='nproduct'),
+    path('c_product/', product_c_view, name='ncproduct'),
+    path('cc_product/', product_cc_view, name='nccproduct'),
+    path('create_product_init/', render_initial_data),
+    path('products/<int:d_id>/', dynamic_smth, name="products"),
+    path('delete_post/<int:del_id>/', delete_by_post),
+    path('list/', product_list),
     
-    path('products/', product_list_view, name="product-list"),
-    path('products/create', product_create_view, name='product-list'),
-    path('products/<int:get_id>/', product_detail_view, name="product-detail"),
-    path('products/<int:upd_id>/update', product_update_view, name="product-update"),
-    path('products/<int:del_id>/delete', product_delete_view, name="product-delete"),
-    # 
 ]
