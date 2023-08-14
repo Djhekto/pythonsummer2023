@@ -151,9 +151,23 @@ create form w/ (forms.Form)
 get _data_ as fun param in view from urls <_type_:_data_>
 
 ...
+a lot but no txt edit cause no reason
+...
 
 
+... From new app save new obj_type to admin
+python manage.py startapp blog
+model  
+app to settings
+migrate
+view             /with inheritance //class based view
+urls -> new urls /-> .as_view() 
+template         / #<App_name>/<Model_Name>_<inhereted_view_name>.html
+                    //or custom template_name=...
+    //templates/<model_name> in new_app -> template_name file
 
+
+ 
 
 
 
