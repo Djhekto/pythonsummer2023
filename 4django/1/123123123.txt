@@ -165,8 +165,9 @@ urls -> new urls /-> .as_view()
 template         / #<App_name>/<Model_Name>_<inhereted_view_name>.html
                     //or custom template_name=...
     //templates/<model_name> in new_app -> template_name file
-
-
+...
+   |pk   primary key   if queryset is used
+   |     self.kwargs.get("id")
  
 
 
