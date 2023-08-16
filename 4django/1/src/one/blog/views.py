@@ -3,6 +3,7 @@ from django.db import models
 from django.forms.models import BaseModelForm
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
+from django.urls import reverse
 
 from django.views.generic import (
     CreateView,
@@ -54,7 +55,15 @@ class ArticleDetailView(DetailView):
         id_ = self.kwargs.get("id")
         return get_object_or_404(Article, id = id_)
     
-
+class ArticleDeleteView(DeleteView):
+    template_name = "articles/article_delete.html" 
+    #queryset = Article.objects.all() 
+    def get_object(self):
+        id_ = self.kwargs.get("id")
+        return get_object_or_404(Article, id = id_)
+    
+    def get_success_url(self):
+        return reverse("articles:article_list")
 
 
 

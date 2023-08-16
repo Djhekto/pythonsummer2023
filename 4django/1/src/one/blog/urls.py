@@ -2,7 +2,9 @@ from django.contrib import admin
 from django.urls import path
 
 from .views import ( ArticleListView, ArticleDetailView,
-                    ArticleCreateView, ArticleUpdateView
+                    ArticleCreateView, ArticleUpdateView,
+                    ArticleDeleteView,
+
 )
 
 app_name = "blog"
@@ -15,6 +17,7 @@ urlpatterns = [
     #path('<int:id>/update/', ArticleUpdateView.as_view(), name="article_update"), 
             #HTTP error 405   IDK WHY
     path('update/<int:id>/', ArticleUpdateView.as_view(), name="article_update"), 
+    path('delete/<int:id>/', ArticleDeleteView.as_view(), name="article_delete"), 
 
 ]
 

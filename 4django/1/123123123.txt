@@ -184,8 +184,8 @@ view   -< form_class = ArticleModelForm
 
 .overwrite default path after succ create   def get_success_url(self):
 
-
-
+...update -//-
+...delete has to have get_absolute_url
 
 
 
