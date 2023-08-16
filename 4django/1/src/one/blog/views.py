@@ -28,6 +28,20 @@ class ArticleCreateView(CreateView):
     #    return "/"
 
 
+class ArticleUpdateView(UpdateView):
+    template_name = "articles/article_update.html"
+    form_class = ArticleModelForm
+    queryset = Article.objects.all() #blog/Article_list.html
+    
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        return super().form_valid(form)
+    
+    def get_object(self):
+        id_ = self.kwargs.get("id")
+        return get_object_or_404(Article, id = id_)
+
+
 
 class ArticleListView(ListView):
     template_name = "articles/article_list.html" 
