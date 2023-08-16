@@ -169,8 +169,20 @@ template         / #<App_name>/<Model_Name>_<inhereted_view_name>.html
    |pk   primary key   if queryset is used
    |     self.kwargs.get("id")
  
+... classBased create/Upd view
+
+form   -< model form
+view   -< form_class = ArticleModelForm
+          def form_valid(self, form):
+-//- urls, template
+//model  -< get_absolute_url
 
 
+// is not a registered namespace
+=> urls main       path(  'blog/', include(('blog.urls'),namespace="articles")   ),
+#### didnt help |=> template app    <form action="{% url 'submit' %} " method='POST'>
+
+.overwrite default path after succ create   def get_success_url(self):
 
 
 

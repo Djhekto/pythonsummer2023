@@ -26,6 +26,6 @@ urlpatterns = [
     path('about/', aboutsmt, name='about'),
     
     path('products/', include('products.urls')),
-    path('blog/', include('blog.urls')),
+    path(  'blog/', include(('blog.urls'),namespace="articles")   ),
 
 ]

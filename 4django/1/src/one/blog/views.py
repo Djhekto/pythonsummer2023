@@ -1,5 +1,7 @@
 from typing import Any, Optional
 from django.db import models
+from django.forms.models import BaseModelForm
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 
 from django.views.generic import (
@@ -11,6 +13,21 @@ from django.views.generic import (
 )
 
 from .models import Article
+from .forms import ArticleModelForm
+
+class ArticleCreateView(CreateView):
+    template_name = "articles/article_create.html" 
+    form_class = ArticleModelForm
+    queryset = Article.objects.all() #blog/Article_list.html
+    
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        return super().form_valid(form)
+    
+    #def get_success_url(self):
+    #    return "/"
+
+
 
 class ArticleListView(ListView):
     template_name = "articles/article_list.html" 
