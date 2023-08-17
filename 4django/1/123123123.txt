@@ -187,7 +187,8 @@ view   -< form_class = ArticleModelForm
 ...update -//-
 ...delete has to have get_absolute_url
 
-
+... view /w class
+just put a get/... fun in it
 
 
 

@@ -27,5 +27,7 @@ urlpatterns = [
     
     path('products/', include('products.urls')),
     path(  'blog/', include(('blog.urls'),namespace="articles")   ),
+    path(  'two/', include(('two.urls'),namespace="two")   ),
+
 
 ]

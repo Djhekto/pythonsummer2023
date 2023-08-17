@@ -1,5 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views import View
+
+class MyView(View):
+    template_name = "home.html"
+    
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name , {})
+
+
 
 def home(request, *args, **kwargs):
     print(args,kwargs)
@@ -16,6 +25,8 @@ def aboutsmt(request, *args, **kwargs):
                  "listt": [1,2,3]
                  }
     return render(request, "about.html", smth_info)
+
+
 
 
 
