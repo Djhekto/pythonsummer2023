@@ -4,6 +4,19 @@ from django.views import View
 
 from .models import MyModel
 
+class MyList(View):
+    template_name = "idk_list.html"
+    queryset = MyModel.objects.all()
+    
+    def get_queryset(self):
+        return self.queryset
+    
+    
+    def get(self, request, *args, **kwargs):
+        context = { "object_list": self.get_queryset() }
+        return render(request, self.template_name , context)
+
+
 class MyView(View):
     template_name = "home.html"
     
