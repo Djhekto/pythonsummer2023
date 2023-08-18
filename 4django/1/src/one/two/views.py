@@ -1,14 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views import View
+
+from .models import MyModel
 
 class MyView(View):
     template_name = "home.html"
     
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name , {})
-
-
+    def get(self, request, id= None, *args, **kwargs):
+        context = {}
+        if id == None:
+            return render(request, self.template_name , {})
+        else:
+            template_name = "idk_detail.html"
+            obj1 = get_object_or_404(MyModel, id = id)
+            context['object'] = obj1
+            return render(request, template_name , context)# //ne self
+            
 
 def home(request, *args, **kwargs):
     print(args,kwargs)
