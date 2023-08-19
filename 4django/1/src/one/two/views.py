@@ -3,6 +3,22 @@ from django.http import HttpResponse
 from django.views import View
 
 from .models import MyModel
+from .forms import MyModelForm
+
+class MyCreate(View):
+    template_name = "idk_create.html"
+    def get(self, request, *args, **kwargs):
+        form = MyModelForm()
+        context = {"form": form}
+        return render(request, self.template_name, context)
+
+    def post(self, request, *args, **kwargs):
+        form = MyModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            form = MyModelForm()
+        context = {"form": form}
+        return render(request, self.template_name, context)
 
 class MyList(View):
     template_name = "idk_list.html"
