@@ -5,6 +5,37 @@ from django.views import View
 from .models import MyModel
 from .forms import MyModelForm
 
+class MyUpdate(View):
+    template_name = "idk_update.html" # DetailView
+    def get_object(self):
+        id = self.kwargs.get('id')
+        object = None
+        if id is not None:
+            object = get_object_or_404(MyModel, id=id)
+        return object
+
+    def get(self, request, id=None, *args, **kwargs):
+        # GET method
+        context = {}
+        obj = self.get_object()
+        if obj is not None:
+            form = MyModelForm(instance=obj)
+            context['object'] = obj
+            context['form'] = form
+        return render(request, self.template_name, context)
+
+    def post(self, request, id=None,  *args, **kwargs):
+        # POST method
+        context = {}
+        obj = self.get_object()
+        if obj is not None:
+            form = MyModelForm(request.POST, instance=obj)
+            if form.is_valid():
+                form.save()
+            context['object'] = obj
+            context['form'] = form
+        return render(request, self.template_name, context)
+
 class MyCreate(View):
     template_name = "idk_create.html"
     def get(self, request, *args, **kwargs):

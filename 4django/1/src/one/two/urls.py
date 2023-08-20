@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 
 from .views import (
-    MyView, MyList, MyCreate,
+    MyView, MyList, MyCreate, MyUpdate,
     home  
 )
 
@@ -16,6 +16,7 @@ urlpatterns = [
     path('<int:id>/', MyView.as_view() , name="idk_detail"), 
     path('list/', MyList.as_view() , name="idk_list"), 
     path('create/', MyCreate.as_view() , name="idk_create"), 
+    path('update/<int:id>/', MyUpdate.as_view() , name="idk_update"), 
 
 
 ]
