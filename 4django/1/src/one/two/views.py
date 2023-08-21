@@ -1,9 +1,34 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from django.views import View
 
 from .models import MyModel
 from .forms import MyModelForm
+
+class MyDelete(View):
+    template_name = "idk_delete.html" 
+    def get_object(self):
+        id = self.kwargs.get('id')
+        object = None
+        if id is not None:
+            object = get_object_or_404(MyModel, id=id)
+        return object
+    
+    def get(self, request, id=None, *args, **kwargs):
+        context = {}
+        obj = self.get_object()
+        if obj is not None:
+            context['object'] = obj
+        return render(request, self.template_name, context)
+
+    def post(self, request, id=None,  *args, **kwargs):
+        context = {}
+        obj = self.get_object()
+        if obj is not None:
+            obj.delete()
+            context['object'] = None
+            return redirect('/two/')
+        return render(request, self.template_name, context)
 
 class MyUpdate(View):
     template_name = "idk_update.html" # DetailView
