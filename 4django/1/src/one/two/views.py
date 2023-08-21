@@ -5,15 +5,17 @@ from django.views import View
 from .models import MyModel
 from .forms import MyModelForm
 
-class MyDelete(View):
-    template_name = "idk_delete.html" 
+class MyMixin(object):
+    model = MyModel
     def get_object(self):
         id = self.kwargs.get('id')
-        object = None
+        obj = None
         if id is not None:
-            object = get_object_or_404(MyModel, id=id)
-        return object
-    
+            obj = get_object_or_404(self.model, id=id)
+        return obj 
+
+class MyDelete(MyMixin, View):
+    template_name = "idk_delete.html" 
     def get(self, request, id=None, *args, **kwargs):
         context = {}
         obj = self.get_object()
@@ -30,14 +32,8 @@ class MyDelete(View):
             return redirect('/two/')
         return render(request, self.template_name, context)
 
-class MyUpdate(View):
+class MyUpdate(MyMixin, View):
     template_name = "idk_update.html" # DetailView
-    def get_object(self):
-        id = self.kwargs.get('id')
-        object = None
-        if id is not None:
-            object = get_object_or_404(MyModel, id=id)
-        return object
 
     def get(self, request, id=None, *args, **kwargs):
         # GET method
